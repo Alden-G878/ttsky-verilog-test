@@ -30,6 +30,7 @@ module RangeFinder
         en_error = 1'b0;
         nextState = wait_for_go;
         reg_zero = 1'b0;
+	reg_en = 1'b0;
         if(reset==1'b1) reg_zero = 1'b1;
         case(currState)
             wait_for_go: begin
